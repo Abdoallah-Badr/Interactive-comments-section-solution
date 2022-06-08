@@ -121,7 +121,7 @@ function compareReplies (rankDiv,math){
     importedNode.querySelector('#client-name').textContent = "Abdoallah Badr"
     importedNode.querySelector('#duration').textContent = `${parseInt(Math.random()*30)} days ago`
     importedNode.querySelector('#ranks-num').textContent = 0
-    importedNode.querySelector('img').outerHTML = `<img src="/images/person/peep-1.png">`
+    importedNode.querySelector('img').outerHTML = `<img src="images/person/peep-1.png">`
     if (importType === "comment") {
         ulList.append(importedNode)
     } else if (importType === "reply") {
