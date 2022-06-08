@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title> Interactive comments section</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <script src="main.js" defer></script> 
+<body>
+  <header>
+    <h1>Ranking comments system</h1>
+  </header>
+  <main> 
+    <ul id="comments-list">
+      <div class ="modal">
+        <div class="backdrop"></div>
+        <div class="deletion-box">
+            <h4>Delete comment</h4>
+            <p> 
+              Are you sure you want to delete this comment?
+              This will remove the comment and can't be undone.
+            </p>
+            <span><button class="noBtn">NO, Cancel</button><br><button class="okBtn">OK, Delete</button></span>
+        </div>
+      </div>
+      <li class="comment">
+        <div id="comment-body">
+          <div id="comment-detials">
+            <div id="person-image">
+              <img src="/images/person/male_33_f0f9942c34389679a297c6c3598fb12dc3763393.jpg" alt="your photo"> 
+            </div>
+            <h4 id="client-name">Mostafa A. </h4> 
+            <p id="duration">3 months ago</p>
+            <button class="replybtn"><i role="button"  class="fa-solid fa-reply fa-1x"></i> Reply</button>
+          </div>
+          <div class="ranking">
+            <button class="plusBtn"> <i role="button"  class="fa-solid fa-plus"></i></button>
+            <p class="ranks-num" id="ranks-num">1</p>
+            <button class="minusBtn"> <i role="button" class="fa-solid fa-minus"></i></button>
+          </div>
+          <div class="client-comment">
+            <p >I found this course very rewarding and fun to follow along.  Great explanations with alot of information to sort through, I would probably recommend anyone going through this course to do so and then go back to sections when coding yourself to make it stick even better.</p>
+          </div>
+        </div>
+        <ul class="replies-list"> 
+          <div id="vline"> </div>
+          <li class="reply" >  
+            <div id="reply-body"> 
+              <div id="reply-detials">
+                <div id="person-image">
+                  <img src="/images/person/thumb_male_52_647e195e6b66ea86189a8e903cad1e53674b3eaf.jpg" alt="your photo"> 
+                </div>
+                <h4 id="client-name"> Yasser S.</h4> 
+                <p id="duration">2 months ago</p>
+                <button class="replybtn"><i class="fa-solid fa-reply fa-1x"></i> Reply</button>
+              </div>
+              <div class="client-reply">
+                <p class="client-reply-para" >for someone whos a bit slow to grasp concept and push them selves a bit to think then she/he might be lost examples used(code) as they're a bit complex however they make one to be strong confident after going through them.</p>
+              </div>
+              <div class="ranking">
+                <button class="plusBtn"> <i class="fa-solid fa-plus"> </i> </button>
+                <p class="ranks-num" id="ranks-num">0</p>
+                <button class="minusBtn"> <i class="fa-solid fa-minus"></i> </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="comment">
+        <div id="comment-body">
+          <div id="comment-detials">
+            <div id="person-image">
+              <img src="/images/person/thumb_male_53_c8c10c1907ddc4f95346a7697f22536521416627.jpg" alt="your photo"> 
+            </div>
+            <h4 id="client-name"> Mohamed G.</h4> 
+            <p id="duration">2 months ago</p>
+            <button class="replybtn"><i class="fa-solid fa-reply fa-1x"></i> Reply</button>
+          </div>
+          <div class="ranking">
+            <button class="plusBtn"> <i class="fa-solid fa-plus"></i></button>
+            <p class="ranks-num" id="ranks-num">0</p>
+            <button class="minusBtn"> <i class="fa-solid fa-minus"></i></button>
+          </div>
+          <div class="client-comment">
+            <p>This course has really helped me to improve my JavaScript skill. I now have a better understanding of concepts like the DOM, HTTP request, etc. It is definitely a lengthy course and it cannot be otherwise as it covers a lot of topics. So I went through it at my own pace and it was 100% worth the time and investment.</p>
+          </div>
+        </div>
+        <ul class="replies-list"> 
+          <div id="vline"> </div>
+        </ul>
+      </li>
+    </ul>
+      <template id="comment-temp">
+        <li class="comment">
+          <div id="comment-body">
+            <div id="comment-detials">
+              <div id="person-image">
+                <img src="" alt="your photo"> 
+              </div>
+              <h4 id="client-name"> your Name</h4> 
+              <p id="duration">duration</p>
+              <button class="replybtn"><i class="fa-solid fa-reply fa-1x"></i> Reply</button>
+              <button class="delComment"> <i class="fa-solid fa-trash"></i>&nbsp;Delete</button>
+            </div>
+            <div class="ranking">
+              <button class="plusBtn"> <i class="fa-solid fa-plus"></i></button>
+              <p class="ranks-num" id="ranks-num">0</p>
+              <button class="minusBtn">
+                 <i class="fa-solid fa-minus" type="button"></i>
+              </button>
+            </div>
+            <div class="client-comment">
+              <p>pragrah text</p>
+            </div>
+          </div>
+          <ul class="replies-list"> 
+            <div id="vline"></div>
+          </ul>
+        </li>
+      </template>
+          <template id="reply-temp">
+            <li class="reply" >  
+              <div id="reply-body"> 
+                <div id="reply-detials">
+                  <div id="person-image">
+                    <img src="" alt="your photo"> 
+                  </div>
+                  <h4 id="client-name"> your Name</h4> 
+                  <p id="duration"> 2 months ago</p>
+                  <button class="replybtn"><i class="fa-solid fa-reply fa-1x"></i>&nbsp;Reply</button>
+                  <button class="delComment"><i class="fa-solid fa-trash"></i>&nbsp;Delete</button>
+                </div>
+                <div class="client-reply">
+                  <p class="client-reply-para" >pragrah text</p>
+                </div>
+                <div class="ranking">
+                  <button class="plusBtn"><i class="fa-solid fa-plus"></i></button>
+                  <p class="ranks-num" id="ranks-num">0</p>
+                  <button class="minusBtn"><i class="fa-solid fa-minus"></i></button>
+                </div>
+              </div>
+            </li>
+          </template>
+    <section class="send-comment">
+      <div id="send-body">
+        <div id="person-image">
+          <img src="/images/person/peep-1.png" alt="your photo"> 
+        </div>
+        <div class="text">
+          <textarea rows="5" cols="20" placeholder=" Add a comment..." value=""></textarea>
+        </div>
+        <button class="sendBtn" >SEND</button>
+      </div>
+    </section> 
+  </main>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.  
+  </div> -->
+  <h3>Enjoy by adding multiple comments and replies</h3>
+</body>
+</html>
