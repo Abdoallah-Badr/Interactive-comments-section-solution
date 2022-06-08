@@ -1,6 +1,6 @@
 # Frontend Mentor - Interactive comments section solution
 
-### the base project from frontend mentor but i am add to it some some features as dynamic movement for comments and replies
+### the base project from frontend-mentor but i am add to it some some features as dynamic movement for comments and replies
 
 ## Table of contents
 
@@ -18,19 +18,17 @@
 
 ## Overview
 
-### Screenshot
+### Screenshots
 
-![](./srceenshots/Screenshot%202022-06-07%20at%2014-58-37%20Interactive%20comments%20section.png)
-![](./srceenshots/Screenshot%202022-06-07%20at%2014-58-58%20Interactive%20comments%20section.png)
-![](./srceenshots/Screenshot%202022-06-07%20at%2015-04-23%20Interactive%20comments%20section.png)
-![](./srceenshots/Screenshot%202022-06-07%20at%2015-05-08%20Interactive%20comments%20section.png)
+(./srceenshots/Screenshot%202022-06-07%20at%2014-58-37%20Interactive%20comments%20section.png)
+(./srceenshots/Screenshot%202022-06-07%20at%2014-58-58%20Interactive%20comments%20section.png)
+(./srceenshots/Screenshot%202022-06-07%20at%2015-04-23%20Interactive%20comments%20section.png)
+(./srceenshots/Screenshot%202022-06-07%20at%2015-05-08%20Interactive%20comments%20section.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
+- Solution URL: [Add solution URL here](https://github.com/Abdoallah-Badr/Interactive-comments-section-solution)
+- Live Site URL: [Add live site URL here](https://abdoallah-badr.github.io/Interactive-comments-section-solution/)
 
 ### Built with
 
@@ -44,24 +42,23 @@ Use this section to recap over some of your major learnings while working throug
 
 To see how you can add code snippets, see below:
 
-```html
-- learn more about class and id attributes and i should know how access to them
-because every attributes represent a differnt kind of lists - learn more about
-textarea and template tags
-```
+#### html
 
-```css
+- learn more about class and id attributes and i should know how access to them
+  because every attributes represent a differnt kind of lists - learn more about
+- textarea and template tags
+
+#### css
+
 - more and more about flex and css grid
 - styling textarea
 
-```
+#### js
 
-```js
 - alot about DOM and how to access any element i want.
 - live DOM element list and differnce between nonlive list.
 - how make the elements dynamic affected with user actions.
 - how access to elements style and change it by js
-```
 
 ### Continued development
 
@@ -76,5 +73,4 @@ textarea and template tags
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Abdoallah](https://www.frontendmentor.io/profile/Abdoallah-Badr)
