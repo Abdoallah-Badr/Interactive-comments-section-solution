@@ -20,15 +20,14 @@
 
 ### Screenshots
 
-(./srceenshots/Screenshot%202022-06-07%20at%2014-58-37%20Interactive%20comments%20section.png)
-(./srceenshots/Screenshot%202022-06-07%20at%2014-58-58%20Interactive%20comments%20section.png)
-(./srceenshots/Screenshot%202022-06-07%20at%2015-04-23%20Interactive%20comments%20section.png)
-(./srceenshots/Screenshot%202022-06-07%20at%2015-05-08%20Interactive%20comments%20section.png)
+![desktop full preview!](./srceenshots/Screenshot%202022-06-07%20at%2014-58-37%20Interactive%20comments%20section.png)
+![mobile full preview!](./srceenshots/Screenshot%202022-06-07%20at%2014-58-58%20Interactive%20comments%20section.png)
+![replies and comments!](./srceenshots/Screenshot%202022-06-07%20at%2015-04-23%20Interactive%20comments%20section.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Abdoallah-Badr/Interactive-comments-section-solution)
-- Live Site URL: [Add live site URL here](https://abdoallah-badr.github.io/Interactive-comments-section-solution/)
+- Solution URL: [👉🏽 here](https://github.com/Abdoallah-Badr/Interactive-comments-section-solution)
+- Live Site URL: [👉🏽 here](https://abdoallah-badr.github.io/Interactive-comments-section-solution/)
 
 ### Built with
 
