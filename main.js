@@ -11,7 +11,7 @@ const ulList = document.getElementsByTagName('ul')[0];
 const vline = document.getElementById('vline')
 
 const modal = document.querySelector('.modal')
-
+const UserName = prompt("type your name ,perosnalize comments and replies",'Abdoallah Badr')
 const PLUS = "plus"
 const MINUS = "minus"
 
@@ -100,14 +100,15 @@ function compareReplies (rankDiv,math){
             }
         } else if(math === MINUS){
             if (targetNum < siblngNum) {
-                holdedSiblngLi.insertAdjacentElement("afterend",currentLi) }
+                holdedSiblngLi.insertAdjacentElement("afterend",currentLi)}
             }}}
             
     // ----  handling comments and replies  ----- \\
     
     function modifiySendings(importType,text){
-    let importedNode = undefined;
-    if (importType === "comment") {
+        // -- import previous templates --\\
+        let importedNode = undefined;
+        if (importType === "comment") {
         const commentTempate = commentTemp.content.firstElementChild.cloneNode(true);
         importedNode = commentTempate;
         importedNode.querySelector('.client-comment p').textContent = text
@@ -118,15 +119,19 @@ function compareReplies (rankDiv,math){
         importedNode = replyTempate;
         importedNode.getElementsByClassName('client-reply-para')[0].textContent = text
     }
-    importedNode.querySelector('#client-name').textContent = "Abdoallah Badr"
+    // -- modifing cloned nodes --\\
+
+    importedNode.querySelector('#client-name').textContent = UserName;
     importedNode.querySelector('#duration').textContent = `${parseInt(Math.random()*30)} days ago`
-    importedNode.querySelector('#ranks-num').textContent = 0
+    importedNode.querySelector('#ranks-num').textContent = 0;
     importedNode.querySelector('img').outerHTML = `<img src="images/person/peep-1.png">`
     if (importType === "comment") {
         ulList.append(importedNode)
     } else if (importType === "reply") {
         currentLi.getElementsByTagName('ul')[0].insertAdjacentElement('beforeend',importedNode)
-    }}
+    }
+    // localStorage.setItem('element1',)
+}
     
     sendCommentBtn.addEventListener('click',()=>{
         const commentTextArea = document.querySelector('.send-comment textarea');
@@ -153,7 +158,8 @@ function compareReplies (rankDiv,math){
             if(replyTextAreaVal ===""){
                 alert('your reply is empty')
             }
-            modifiySendings("reply",replyTextAreaVal);    
+            localStorage.setItem('element1',replyTextAreaVal)
+            modifiySendings("reply",localStorage.getItem('element1'));
             sendNode.remove();                            
         })}
     })
