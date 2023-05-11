@@ -1,6 +1,6 @@
-# Frontend Mentor - Interactive comments section solution
+# Interactive comments section solution
 
-### the base project from frontend-mentor but i am add to it some some features as dynamic movement for comments and replies
+### the base project from frontend-mentor but i am add alot od features as dynamic movement for comments and replies
 
 ## Table of contents
 
